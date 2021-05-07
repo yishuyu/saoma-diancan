@@ -1,0 +1,46 @@
+<!-- 顶部轮播图 -->
+<view>
+	<custom-swiper imgUrls="{{banner}}" />
+</view>
+
+<!-- 搜索框 -->
+<!-- <view class="searchRoot">
+	<input class="searchInput" bindconfirm='goSearch' confirm-type='search' bindinput="getSearchKey" placeholder="搜索甜品" />
+	<icon class="weui-icon-search_in-box search-icon searchImg" type="search" size="20" color="#AB956D" bindtap="goSearch"></icon>
+</view> -->
+
+<view class="search">
+        <navigator url="../component/search/search">
+            <view class="search-text">
+                <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+                搜 索
+            </view>
+        </navigator>
+    </view>
+
+<!-- 九宫格 -->
+<view class="category-panel1">
+	<!-- 第一排 -->
+	<view class="category-panel2">
+		<!-- <view bindtap='diancan' class="category-item">
+			<image class="category-item-image" src="/image/saoyisao.png" />
+			<text class="category-item-text">{{isNeedSaoMa?'扫码点餐':'去点餐'}}</text>
+		</view>
+		<view bindtap='goToFood' class="category-item">
+			<image class="category-item-image" src="/image/caipin.png" />
+			<text class="category-item-text">菜单浏览</text>
+		</view> -->
+		<view bindtap='paihao' class="category-item">
+			<image class="category-item-image" src="/image/paihao.png" />
+			<text class="category-item-text">排号等位</text>
+		</view>
+		<view bindtap='goToPhone' class="category-item">
+			<image class="category-item-image" src="/image/kefu.png" />
+			<text class="category-item-text">饭店电话</text>
+		</view>
+	</view>
+	<!-- 第二排 -->
+	<view class="category-panel2">
+
+	</view>
+</view>
